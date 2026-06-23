@@ -1,4 +1,0 @@
-user_id,image_paths,user_claim,claim_object
-u001,images/sample/car_dent_001/photo_1.jpg,The front bumper has a dent from a parking lot incident,car
-u002,images/sample/laptop_crack_001/screen_1.jpg;images/sample/laptop_crack_001/screen_2.jpg,The laptop screen cracked when I dropped it yesterday,laptop
-u003,images/sample/package_damaged_001/damage_1.jpg,Package arrived crushed on the corner,package

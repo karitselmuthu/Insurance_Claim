@@ -28,6 +28,11 @@ yarn-error.log*
 *.swo
 *~
 
+# Test & sample data — keep local, never push to GitHub
+dataset/images/
+dataset/claims.csv
+dataset/sample_claims.csv
+
 # Test outputs
 output.csv
 evaluation/*.md
