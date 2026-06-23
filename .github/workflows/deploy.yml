@@ -23,6 +23,20 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Guard — no credentials or test files in build context
+        run: |
+          # Fail immediately if any .env file is present (should be blocked by .gitignore)
+          if find . -maxdepth 2 -name ".env" -o -name ".env.local" -o -name ".env.production" | grep -q .; then
+            echo "❌ Credential file (.env) found in workspace — aborting deploy."
+            exit 1
+          fi
+          # Confirm test images are excluded from the Docker build context
+          if docker buildx build --no-cache --dry-run . 2>/dev/null | grep -q "dataset/images/test"; then
+            echo "❌ Test images leaked into Docker build context — check .dockerignore."
+            exit 1
+          fi
+          echo "✅ No credentials or test files detected in build context."
+
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:

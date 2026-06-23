@@ -1,10 +1,34 @@
+# Dependencies & build artifacts
 node_modules
 dist
+
+# Credentials & secrets — NEVER ship these
 .env
-.env.*
-!.env.example
+.env.local
+.env.*.local
+
+# Test & evaluation data — not needed in production image
+dataset/images/
+dataset/sample_claims.csv
+dataset/claims.csv
+evaluation/
 output.csv
-evaluation/*.md
-evaluation/*.json
+
+# Test & dev scripts
+create_test_images.js
+create_test_images.py
+
+# CI/CD & repo metadata
+.github/
+.gitignore
+.gitattributes
+*.md
+
+# TypeScript source config (compiled output ships, not source config)
+tsconfig.json
+src/
+
+# OS noise
 .DS_Store
 *.log
+*.swp
