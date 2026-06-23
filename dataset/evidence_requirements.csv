@@ -1,0 +1,7 @@
+requirement_id,claim_object,applies_to,minimum_image_evidence
+req_001,car,dent or scratch,At least one clear photo of the damaged area from a normal angle
+req_002,car,crack or glass_shatter,Multiple angles showing the full extent of the crack/glass damage
+req_003,laptop,screen,Full screen view showing the damage clearly
+req_004,laptop,water_damage,Evidence of water exposure with timestamp or context
+req_005,package,crushed_packaging,At least two angles showing the extent of crushing
+req_006,all,none,At least one image of the undamaged object or part

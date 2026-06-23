@@ -1,0 +1,5 @@
+# Track binary image files with Git LFS
+dataset/images/**/*.jpg  filter=lfs diff=lfs merge=lfs -text
+dataset/images/**/*.jpeg filter=lfs diff=lfs merge=lfs -text
+dataset/images/**/*.png  filter=lfs diff=lfs merge=lfs -text
+dataset/images/**/*.webp filter=lfs diff=lfs merge=lfs -text

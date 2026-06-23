@@ -1,0 +1,4 @@
+user_id,past_claim_count,accept_claim,manual_review_claim,rejected_claim,last_90_days_claim_count,history_flags,history_summary
+u001,5,4,0,1,2,none,Generally reliable customer with one rejected claim
+u002,12,7,2,3,5,fraud_risk,Multiple rejections and manual reviews required
+u003,2,2,0,0,1,none,New customer with good claim history
