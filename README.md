@@ -449,8 +449,3 @@ System retries automatically. If the problem persists, reduce `CONCURRENCY` to s
 - [ ] Continuous learning from adjuster feedback
 - [ ] Multi-image evidence synthesis
 
----
-
-## License
-
-MIT
